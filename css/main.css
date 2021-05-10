@@ -1,0 +1,118 @@
+html, body{
+	width:100%;
+	height:100%;
+	margin:0;
+	scroll-behavior: smooth;
+}
+#main_con{
+	display: flex;
+	flex-direction: column;
+	width:100%;
+	left:0;
+}
+
+.header_con{
+	position: fixed;
+	right:2%;
+	top:2%;
+	background-color: #6A7BA2;
+	width: 31%;
+	height: 50px;
+	border-radius: 30px;
+	opacity: 0.8;
+	min-width: 355px;
+	z-index:1;
+}
+
+
+.header_con a{
+	color:#FFDFDE;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.header_con a:hover, .header_con a:active{
+	color:white;
+	text-decoration: none;
+	font-weight: 600;
+	background-color: transparent;
+}
+
+.header_con ul li{
+	list-style-type: none;
+	float: left;
+	padding: 0px 20px 0px 20px;
+}
+
+.intro{
+    display: flex;
+    height:100vh;
+    background-image:url('../images/main2.gif');
+    background-attachment: fixed;
+    background-size: cover;
+    color: #FEE715;
+    font-size: 4.5vw;
+    font-weight: 800;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+  	text-align: center;
+}
+
+@media (max-width:600px){ /*가로 너비가 600px 이하일 때 아래 스타일 적용*/
+    .header_con{
+    	width: 100px;
+		height: 80px;
+		position: fixed;
+		right:2%;
+		top:2%;
+		background-color: #6A7BA2;
+		border-radius: 25px;
+		opacity: 0.8;
+		z-index:1;
+		min-width: 100px;
+	}
+
+	.header_con ul{
+		width:100%;
+		margin-left:0;
+		margin-top:5px;
+		padding-left:0;
+	}
+
+	.header_con ul li{
+		list-style-type: none;
+		float: none;
+		padding: 0px 20px 0px 15px;
+	}
+
+	.intro{
+		font-size: 7vw;
+	}
+
+}
+
+.con{
+	width:100%;
+	height:100%;
+	padding : 10px;
+}
+
+.sub_con{
+	width:100%;
+	height:100%;
+	display: flex;
+	flex-flow : row wrap;
+	justify-content: center;
+}
+
+#AboutMe, #Projects{
+	width:100%;
+	background-color: #50586C;
+}
+
+
+#Skills{
+	width:100%;
+	background-color: #DCE2F0;
+}
